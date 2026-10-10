@@ -96,6 +96,8 @@ The simulator registers five devices and starts sending heartbeats every five se
 
 Supported interactive commands:
 
+Supported interactive commands:
+
 ```text
 list
 stop sim-device-03
