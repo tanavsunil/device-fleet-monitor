@@ -94,7 +94,6 @@ python simulator/run_simulator.py
 
 The simulator registers five devices and starts sending heartbeats every five seconds.
 
-Supported interactive commands:
 
 Supported interactive commands:
 
@@ -104,6 +103,7 @@ stop sim-device-03
 start sim-device-03
 quit
 ```
+
 
 `list` shows which simulated devices are sending heartbeats.
 
