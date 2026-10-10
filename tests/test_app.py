@@ -93,6 +93,10 @@ def test_device_timeout_boundary():
         device, now=last_seen + timedelta(seconds=31)
     ) == "OFFLINE"
 
+    # At 29 seconds, the device must still be online.
+    assert app_module.get_device_status(
+        device, now=last_seen + timedelta(seconds=29)
+    ) == "ONLINE"
 
 def test_summary_counts_devices_correctly():
     client.post(
